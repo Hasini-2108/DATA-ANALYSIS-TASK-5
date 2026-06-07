@@ -1,0 +1,16 @@
+import pandas as pd
+
+# Create sample dataset
+data = {
+    "Product": ["Laptop","Laptop","Phone","Phone","Tablet","Tablet","Headphones","Headphones"],
+    "Region": ["North","South","North","South","North","South","North","South"],
+    "Sales": [1200,800,1500,1100,600,400,900,500]
+}
+
+df = pd.DataFrame(data)
+
+# Save to CSV
+df.to_csv("sales.csv", index=False)
+
+print("✅ Clean sales.csv created!")
+print(df)
